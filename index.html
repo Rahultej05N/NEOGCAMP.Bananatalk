@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Banana talk</title>
+    <style>
+    body{
+        margin: 0;
+        font-family: 'Kalam', cursive;
+        color: #333333;
+        display: block;
+    }
+    textarea{
+        width: 95%;
+        display: block;
+        margin: 1rem;
+        height: 2.5cm;
+        padding: 1rem;
+        box-sizing: border-box;
+        align-items: center;
+        border: 1px solid black;
+    }
+    #output{
+        width: 95%;
+       border: 1px solid black;
+       display: block;
+        margin: 1rem;
+        height: 2.5cm;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    footer{
+        align-items: center;
+        background-color: #F2C94C;
+        margin-top: 5rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    nav{
+        background-color:#F2C94C;
+        text-align: center;
+        display: block;
+        box-sizing: border-box;
+    }
+    button{
+        background-color: #F2C94C;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: large;
+        box-sizing: border-box;
+        margin-left: 1rem;
+    }
+    #abc{
+        margin-left: 15px;
+    }
+</style>
 </head>
 <body>
-    <h1>talk bananaa</h1>
+    <nav>
+        <div style="font-size: 2rem ; padding:1rem;">banana talk</div>
+    </nav>
+   <main>
+    <textarea id="txt-input"
+    placeholder="put your sentence in English and we will translate it into Banana language"></textarea>
+    <button id="btn-translate">Translate To Banana</button>
+
+    <div id="abc">Translation will come here👇</div>
+    <div id="output" style="padding:1rem;font-size:large;"></div>
+
+</main>
+<footer>
+    <div style="font-size:x-large;">about</div>
+    <p>Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.</p>
+</footer> 
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
